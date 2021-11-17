@@ -6,6 +6,6 @@
 
 ---
 
-# 첫번째 노트
+## Notes
 
-- []
+- [첫번째 노트](https://github.com/neoera1346/Practice/blob/main/Note.js)
