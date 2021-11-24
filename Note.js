@@ -79,7 +79,28 @@ console.log("새 오브젝트: ", newJSON)
 
 // ! 오브젝트
 let emptyObj = {};
+
 console.log(emptyObj)
 // Object.keys(emptyObj) = Object[value];
 
-console.log(emptyObj)
+// ! for 반복문
+var Series = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// for (var i = 0; i < Series.length; i++) {
+//     console.log(Series[i])
+// }
+
+// ! 배열 요소들의 곱 중 최대 구하기
+let arr = [-5, -10, 7, 2]
+
+const largestProduct = function(arr) {
+    // ? 1. 배열 오름차순 정렬
+    // ? 2. 최대곱이 나올 수 있는 두 가지 경우 계산
+    // ? 3. 두 가지 경우 중 최대값 돌려받기
+
+    let sorted = arr.slice().sort((a, b) => a - b);
+    let leng = arr.length;
+    let max1 = sorted[leng - 1] * sorted[leng - 2] * sorted[leng - 3];
+    let max2 = sorted[0] * sorted[1] * sorted[length - 1];
+    Math.max(max1, max2);
+}
